@@ -1,4 +1,4 @@
-package Ejercicio4;
+package ejercicio4;
 
 import org.jdbi.v3.core.Jdbi;
 
@@ -16,7 +16,7 @@ public class Main {
         for (Persona persona : personas) {
             System.out.println(persona.nombre() + " " + persona.apellido());
         }
-        
+
         repo.buscarId(1L).ifPresent(persona -> {
             System.out.println(persona.nombre() + " " + persona.apellido());
         });
